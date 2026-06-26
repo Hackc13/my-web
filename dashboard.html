@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard - CrazyHub</title><link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="dark">
+<header class="header">
+<a class="logo dashboard-brand" href="index.html"><img src="assets/crazyhub-logo.png" alt="CrazyHub logo"><span>Dashboard</span></a>
+<button id="logoutBtn" class="admin-link">Logout</button>
+</header>
+
+<main class="admin-layout">
+<section class="panel">
+<h1>Add / Edit Content</h1>
+<input id="itemId" type="hidden">
+
+<label>Title</label>
+<input id="title" placeholder="Example: My Video">
+
+<label>Type</label>
+<select id="type">
+<option value="video">Video</option>
+<option value="movie">Movie</option>
+<option value="series">Series</option>
+<option value="image">Image</option>
+<option value="software">Software</option>
+<option value="download">Download</option>
+</select>
+
+<label>Category</label>
+<input id="category" placeholder="Action, Tutorial, Games, Apps...">
+
+<label>Main Link</label>
+<input id="link" placeholder="Google Drive link, image URL, software URL...">
+
+<label>Thumbnail URL</label>
+<input id="thumb" placeholder="Poster / thumbnail image URL">
+
+<label>Description</label>
+<textarea id="description" placeholder="Short description"></textarea>
+
+<button id="saveBtn" class="btn full">Save Content</button>
+<button id="clearBtn" class="btn-secondary full">Clear</button>
+<p id="formStatus" class="message"></p>
+</section>
+
+<section class="panel">
+<h2>Series Password</h2>
+<p class="security-note">Set the password required before anyone can open the Series tab.</p>
+
+<label>New Series Password</label>
+<input id="newSeriesPassword" type="password" placeholder="Enter new Series password">
+
+<button id="saveSeriesPasswordBtn" class="btn full" type="button">Save Series Password</button>
+<p id="seriesPasswordStatus" class="message"></p>
+</section>
+
+<section class="panel">
+<h2>Manage Content</h2>
+<div id="adminList"></div>
+</section>
+</main>
+<script type="module" src="assets/dashboard.js"></script>
+</body>
+</html>

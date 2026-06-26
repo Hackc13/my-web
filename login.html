@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - CrazyHub</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="animated-auth-page login-mode crazy-dark-auth">
+<div class="auth-grid-bg"></div>
+<div class="auth-orb auth-orb-one"></div>
+<div class="auth-orb auth-orb-two"></div>
+
+<main class="auth-browser">
+  <div class="browser-bar">
+    <span class="dot red"></span>
+    <span class="dot yellow"></span>
+    <span class="dot green"></span>
+  </div>
+
+  <section class="auth-stage">
+    <div class="animated-auth-card">
+      <div class="auth-form-side">
+        <img class="auth-brand animated-brand" src="assets/crazyhub-logo.png" alt="CrazyHub logo">
+        <h1>Enter CrazyHub</h1>
+
+        <button id="googleBtn" type="button" class="social-login">G&nbsp;&nbsp; Continue with Google</button>
+
+        <div class="divider light"><span></span><b>OR USE YOUR EMAIL ACCOUNT</b><span></span></div>
+
+        <label>Email or Username</label>
+        <input id="email" class="clean-input animated-input" type="text" autocomplete="username">
+
+        <label>Password</label>
+        <div class="password-wrap animated-password">
+          <input id="password" class="clean-input animated-input" type="password" autocomplete="current-password">
+          <button id="togglePass" type="button">👁</button>
+        </div>
+
+        <a class="forgot animated-link" href="forgot-password.html">Forgot your password?</a>
+        <button id="loginBtn" type="button" class="animated-primary">ENTER HUB</button>
+        <p id="message" class="clean-message"></p>
+      </div>
+
+      <aside class="auth-welcome-side">
+        <div class="circle-deco circle-top"></div>
+        <div class="circle-deco circle-bottom"></div>
+        <h2>Welcome to CrazyHub</h2>
+        <p>Unlock your private tech, gaming, videos and media universe.</p>
+        <a href="signup.html" class="animated-outline">CREATE ACCESS</a>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<script type="module" src="assets/user-login.js"></script>
+</body>
+</html>

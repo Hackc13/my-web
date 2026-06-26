@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Login - CrazyHub</title><link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="clean-login">
+<main class="auth-card">
+<img class="auth-brand" src="assets/crazyhub-logo.png" alt="CrazyHub logo">
+<h1>Admin Login</h1>
+<p class="admin-note">Admin direct login. Normal users should use login page.</p>
+
+<label>Admin email</label>
+<input id="email" class="clean-input" type="email">
+
+<label>Password</label>
+<div class="password-wrap">
+<input id="password" class="clean-input" type="password">
+<button id="togglePass" type="button">👁</button>
+</div>
+
+<button id="adminLoginBtn" class="clean-primary">Enter Admin Panel</button>
+
+<div class="no-account">
+<a href="login.html" class="clean-outline">Normal user login</a>
+</div>
+
+<p id="message" class="clean-message"></p>
+</main>
+<script type="module" src="assets/admin-login.js"></script>
+</body>
+</html>

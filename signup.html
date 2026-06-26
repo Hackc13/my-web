@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Access - CrazyHub</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="animated-auth-page signup-mode crazy-dark-auth signup-centered-page">
+<div class="auth-grid-bg"></div>
+<div class="auth-orb auth-orb-one"></div>
+<div class="auth-orb auth-orb-two"></div>
+
+<main class="auth-browser">
+  <div class="browser-bar">
+    <span class="dot red"></span>
+    <span class="dot yellow"></span>
+    <span class="dot green"></span>
+  </div>
+
+  <section class="auth-stage">
+    <div class="animated-auth-card signup-card">
+      <aside class="auth-welcome-side signup-welcome">
+        <div class="circle-deco circle-top"></div>
+        <div class="circle-deco circle-bottom"></div>
+        <h2>Already have access?</h2>
+        <p>Return to your private CrazyHub world and continue watching, sharing and exploring.</p>
+        <a href="login.html" class="animated-outline">LOGIN</a>
+      </aside>
+
+      <div class="auth-form-side signup-form-side">
+        <img class="auth-brand animated-brand" src="assets/crazyhub-logo.png" alt="CrazyHub logo">
+        <h1>Create Access</h1>
+
+        <label>Name</label>
+        <input id="name" class="clean-input animated-input" type="text" autocomplete="name" placeholder="Your full name">
+
+        <label>Username</label>
+        <input id="username" class="clean-input animated-input" type="text" autocomplete="username" placeholder="Choose username">
+
+        <label>Phone number <span class="optional">(optional)</span></label>
+        <input id="phone" class="clean-input animated-input" type="tel" autocomplete="tel">
+
+        <label>Email</label>
+        <input id="email" class="clean-input animated-input" type="email" autocomplete="email">
+
+        <label>Password</label>
+        <input id="password" class="clean-input animated-input" type="password" autocomplete="new-password">
+
+        <button id="signupBtn" type="button" class="animated-primary">CREATE ACCESS</button>
+        <p id="message" class="clean-message"></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script type="module" src="assets/signup.js"></script>
+</body>
+</html>
