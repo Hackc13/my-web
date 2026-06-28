@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CrazyHub</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="shortcut icon" href="assets/favicon.ico">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png"><link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="dark">
+<header class="header">
+<a class="logo" href="index.html"><img src="assets/crazyhub-logo.png" alt="CrazyHub logo"></a>
+<nav>
+<button class="filter active" data-type="all">Home</button>
+<button class="filter" data-type="video">Videos</button>
+<button class="filter" data-type="movie">Movies</button>
+<button class="filter" data-type="series">Series</button>
+<button class="filter" data-type="image">Images</button>
+<button class="filter" data-type="software">Software</button>
+<button class="filter" data-type="download">Downloads</button>
+<div class="profile-wrap">
+  <button id="userEmail" class="user-email profile-email-btn" type="button">Account</button>
+  <div id="profileMenu" class="profile-menu hidden">
+    <a href="edit-profile.html">Edit Profile</a>
+    <a href="edit-password.html">Edit Password</a>
+  </div>
+</div>
+<a id="adminPanelLink" class="admin-link hidden" href="dashboard.html">Admin Panel</a>
+<button id="logoutBtn" class="admin-link">Logout</button>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<p class="tagline">CRAZY TECH • GAMING • MEDIA</p>
+<h1>Explore Tech, Gaming, Videos & More</h1>
+<p>Share videos, tech content, gaming resources, images, software and downloads all in one place.</p>
+<a href="#library" class="btn">Explore Library</a>
+</div>
+</section>
+
+<main id="library" class="content">
+<div class="topbar">
+<h2>Latest Uploads</h2>
+<input id="search" type="search" placeholder="Search videos, software, images...">
+</div>
+<p id="status" class="status">Loading content...</p>
+<div id="grid" class="grid"></div>
+<section id="downloadPanel" class="download-panel hidden">
+  <div class="download-panel-head">
+    <h3>Downloads</h3>
+    <button id="clearDownloadsBtn" class="download-clear">Clear</button>
+  </div>
+  <div id="downloadList" class="download-list"></div>
+</section>
+</main>
+
+<div id="seriesLockModal" class="series-modal hidden">
+  <div class="series-modal-card">
+    <button id="closeSeriesModal" class="series-modal-close" type="button">×</button>
+    <div class="series-lock-icon">🔒</div>
+    <h2>Series Locked</h2>
+    <p>Enter the Series password to continue.</p>
+    <input id="seriesPasswordInput" type="password" placeholder="Enter Series password">
+    <button id="unlockSeriesBtn" class="btn full" type="button">Unlock Series</button>
+    <p id="seriesPasswordMsg" class="message"></p>
+  </div>
+</div>
+
+<script type="module" src="assets/app.js"></script>
+</body>
+</html>
