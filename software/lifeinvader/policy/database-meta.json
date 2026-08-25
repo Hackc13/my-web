@@ -1,0 +1,13 @@
+{
+  "source_workbook": "LifeInvader (EN3) Clothing and Vehicle List.xlsx",
+  "vehicle_entries": 499,
+  "clothing_entries": 293,
+  "sound_entries": 31,
+  "animated_entries": 14,
+  "categories": [
+    "Clothing",
+    "Items",
+    "Sounds & Animations",
+    "Vehicles"
+  ]
+}

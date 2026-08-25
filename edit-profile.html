@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/style.css">
+<title>Edit Profile - CrazyHub</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="shortcut icon" href="assets/favicon.ico">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+</head>
+<body class="profile-page">
+<div class="auth-grid-bg"></div>
+
+<header class="profile-page-top">
+  <a href="index.html" class="back-home">← Back to Home</a>
+  <img src="assets/crazyhub-logo.png" alt="CrazyHub" class="profile-page-logo">
+</header>
+
+<main class="profile-page-main">
+  <section class="profile-edit-card">
+    <h1>Edit Profile</h1>
+    <p>Enter details and current password.</p>
+
+    <label>Username</label>
+    <input id="profileUsername" type="text" autocomplete="username" placeholder="Enter username">
+
+    <label>Email</label>
+    <input id="profileEmail" type="email" autocomplete="email" placeholder="Enter email">
+
+    <label>Current Password</label>
+    <input id="profileCurrentPassword" type="password" autocomplete="current-password" placeholder="Enter current password">
+
+    <button id="saveProfileBtn" type="button">Save Profile</button>
+    <p id="profileStatus" class="profile-form-status"></p>
+  </section>
+</main>
+
+<script type="module" src="assets/edit-profile.js"></script>
+</body>
+</html>
